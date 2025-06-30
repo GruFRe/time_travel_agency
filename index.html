@@ -2,8 +2,104 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<meta
+			your_name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Time Travel Agency</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body></body>
+	<body>
+		<!-- Header with flex -->
+		<header id="home">
+			<!-- Site Logo/Title before navigations -> Convention for readability -->
+			<h1>Time Travel Agency</h1>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- services section inside main -->
+			<section id="services">
+				<h2>Services</h2>
+				<ul>
+					<li>
+						<p>Visit the dinosaurs</p>
+						<article>
+							<h3>Visit the dinosaurs</h3>
+							<p>
+								Travel back in time to meet the majestatic
+								dinosaurs and see how they lived on our planet
+								so many years ago
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h3>Meet Leonardo da Vinci</h3>
+							<p>
+								Or travel back to Leonardo da Vinci and watch
+								him how he has done some great discovery and
+								paints
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h3>Help yourself and others</h3>
+							<p>
+								Help yourself and others to avoid mistakes you
+								made and maybe regret
+							</p>
+						</article>
+					</li>
+				</ul>
+			</section>
+			<!-- Gallery Section inside main -->
+			<section id="gallery">
+				<h2>Gallery</h2>
+				<figure>
+					<img src="./images/da_vinci.jpg" alt="Leonardo da Vinci" />
+					<figcaption>Mona Lisa by Leonardo da Vinci</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/dinosaur.webp" alt="some dinosaur" />
+					<figcaption>
+						Meet this cute tricertops while travelling with us back
+						in time
+					</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/helping.jpg"
+						alt="people helping each others"
+					/>
+					<figcaption>
+						Help you and others while using our services
+					</figcaption>
+				</figure>
+			</section>
+			<!-- Contact section inside main -->
+			<section id="contact">
+				<h2>Contact</h2>
+				<form>
+					<label for="your_name">Enter your your_name here:</label>
+					<input type="text" id="your_name" name="your_name" />
+					<label for="email">Enter your E-Mail here:</label>
+					<input type="text" id="email" name="email" />
+					<label for="message">Enter your message to us here:</label>
+					<textarea name="message" id="message">
+Your message to us.....</textarea
+					>
+				</form>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer><p>© 2024 Time Travel Agency</p></footer>
+	</body>
 </html>

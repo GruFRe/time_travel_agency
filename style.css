@@ -3,3 +3,10 @@
 	padding: 0;
 	box-sizing: content-box;
 }
+
+header {
+	color: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

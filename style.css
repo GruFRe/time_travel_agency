@@ -104,10 +104,13 @@ footer {
 	margin: 2rem;
 	padding: 1.5rem;
 }
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
+	/* responsiveness for small phones like Pixel 7 */
 	#gallery_container {
+		background-color: black;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
 	}
 
 	#contact form {

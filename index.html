@@ -89,14 +89,28 @@
 			<section id="contact">
 				<h2>Contact</h2>
 				<form>
-					<label for="your_name">Enter your your name here:</label>
-					<input type="text" id="your_name" name="your_name" />
-					<label for="email">Enter your E-Mail here:</label>
-					<input type="text" id="email" name="email" />
-					<label for="message">Enter your message to us here:</label>
-					<textarea name="message" id="message">
+					<!-- Added section around each element 
+					 to get containers for organizing -->
+					<section>
+						<label for="your_name"
+							>Enter your your name here:</label
+						>
+						<input type="text" id="your_name" name="your_name" />
+					</section>
+					<section>
+						<label for="email">Enter your E-Mail here:</label>
+						<input type="text" id="email" name="email" />
+					</section>
+					<section>
+						<label for="message"
+							>Enter your message to us here:</label
+						>
+					</section>
+					<section>
+						<textarea name="message" id="message">
 Your message to us.....</textarea
-					>
+						>
+					</section>
 				</form>
 			</section>
 		</main>

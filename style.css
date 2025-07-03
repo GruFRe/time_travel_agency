@@ -42,13 +42,24 @@ section {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-
-	h2,
-	h3 {
-		border: blueviolet solid 2px;
-		margin: 1.5rem;
-		padding: 1rem;
-	}
+}
+h2 {
+	border: blueviolet solid 2px;
+	font-size: 4rem;
+	margin: 1.5rem;
+	padding: 1rem;
+}
+h3 {
+	border: blueviolet solid 2px;
+	font-size: 2rem;
+	margin: 1.5rem;
+	padding: 1rem;
+}
+section li article p {
+	font-size: 1.5rem;
+}
+#gallery_container figure figcaption {
+	font-size: 2rem;
 }
 #gallery_container {
 	display: grid;
@@ -90,24 +101,49 @@ section {
 	}
 
 	& label {
-		margin: 1rem;
 		grid-column: 1/-1;
+		font-size: 2rem;
+	}
+	input {
+		height: 32px;
+		width: 80%;
+		margin: 12px;
 	}
 	& textarea {
 		height: 100px;
+		width: 80%;
+		font-size: 2rem;
 	}
 }
 footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 2rem;
-	padding: 1.5rem;
+	text-align: center;
+	margin: 12px;
+	font-weight: bold;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
 	/* responsiveness for small phones like Pixel 7 */
-	* {
-		padding: 0px;
-		margin: 0%;
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	h1 {
+		margin: 5rem;
+		text-align: center;
+		font-size: 0.5px;
+		font-size: 10rem;
+	}
+	nav {
+		margin-bottom: 12px;
+	}
+	h2 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+
+	#gallery_container {
+		display: flex;
+		flex-direction: column;
 	}
 }
